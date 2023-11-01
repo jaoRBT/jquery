@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery</title>
+    <!--Chamando biblioteca jQuery-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Funcionalidade da página-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+         //Função para incluir código HTML no Dom
+         //$("audio").html(' <source src="musica/queen.mp3" type="audio/mp3">    ');
+         $('content').html ("<img src'https://s2.glbimg.com/RfuhWEVn-imX9sG2eMQuj48udYM=/e.glbimg.com/og/ed/f/original/2020/08/08/david-clode-xmnqnynd9ju-unsplash.jpg'> ");
+        $("img").click(function(){
+            $(".hello").html("<h1>A imagem foi clicada</h1>")
+        });
+       });
+    </script>
+</head>
+
+<body>
+    
+    <div class="content"></div>
+    <div class="hello"></div>
+
+
+
+    <audio autoplay controls="controls">
+    </audio>
+   <h1 class="element"> 
+   </h1>
+    
+    
+
+
+</body>
+
+</html>
